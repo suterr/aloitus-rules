@@ -21733,10 +21733,30 @@
     "zoomanalytics.co"
   ],
   "allowedHosts": [
-    "io-tech.fi"
+    "io-tech.fi",
+    "youtube.com",
+    "youtu.be",
+    "googlevideo.com",
+    "ytimg.com",
+    "op.fi",
+    "op-palvelut.fi"
   ],
   "extraCssSelectors": [
     "#cookie-notice",
     ".cookie-notice-container"
-  ]
+  ],
+  "scripts": {
+    "popupBlock": "var _origOpen = window.open;\nwindow.open = function(url, name, features) {\n  if (!url || url === 'about:blank' || url === '') return null;\n  try {\n    var u = new URL(url, window.location.href);\n    if (u.hostname === window.location.hostname) {\n      return _origOpen ? _origOpen.call(window, url, name, features) : null;\n    }\n  } catch(e) {}\n  return null;\n};\nwindow.alert  = function() {};\nwindow.confirm = function() { return true; };\nwindow.prompt = function() { return null; };",
+    "iabTcf": "var _noConsent = {\n  cmpStatus: 'loaded', eventStatus: 'useractioncomplete',\n  gdprApplies: true, tcString: '',\n  purpose: { consents: {}, legitimateInterests: {} },\n  vendor: { consents: {}, legitimateInterests: {} },\n  specialFeatureOptins: {},\n  publisher: { consents: {}, legitimateInterests: {} }\n};\nwindow.__tcfapi = function(cmd, ver, cb) {\n  try { if (typeof cb === 'function') cb(_noConsent, true); } catch(e) {}\n};\nwindow.__cmp = function(cmd, arg, cb) {\n  try { if (typeof cb === 'function') cb({ gdprApplies: true, consentData: '' }, true); } catch(e) {}\n};\nwindow.__uspapi = function(cmd, ver, cb) {\n  try { if (typeof cb === 'function') cb('1YYY', true); } catch(e) {}\n};",
+    "sourcepoint": "(function() {\n  var _cd = { consentStatus: { rejectedAll: true, consentedAll: false }, applies: true };\n  var _iotech = window.location.host.indexOf('io-tech.fi') >= 0;\n  var _sp = window._sp_ = window._sp_ || {};\n  _sp.config = _sp.config || {};\n  _sp.executeMessaging = function() {};\n  _sp.loadPrivacyManagerModal = function() {};\n  _sp.addEventListener = function(evt, cb) {\n    if (evt === 'onConsentReady') { try { cb(_cd); } catch(e) {} }\n    else if (evt === 'onSPPMObjectReady') { try { cb({}); } catch(e) {} }\n  };\n  _sp.removeEventListener = function() {};\n  _sp.gdpr = {\n    getUserData: function(cb) { try { cb(_cd); } catch(e) {} },\n    loadPrivacyManagerModal: function() {},\n    reject: function() {}\n  };\n  _sp.ccpa = { getUserData: function(cb) { try { cb({ rejectedAll: true }); } catch(e) {} } };\n  if (!_iotech) {\n    var _q = window._sp_queue;\n    window._sp_queue = { push: function(fn) { try { fn(); } catch(e) {} } };\n    if (Array.isArray(_q)) _q.forEach(function(fn) { try { fn(); } catch(e) {} });\n  }\n})();",
+    "googleConsent": "if (window.location.hostname.indexOf('consent.google') >= 0 ||\n    window.location.hostname.indexOf('accounts.google') >= 0) {\n  function _clickGoogleReject() {\n    var selectors = [\n      'button[aria-label*=\"Reject\"]','button[aria-label*=\"Hylkää\"]',\n      'button[aria-label*=\"Decline\"]','button[aria-label*=\"Refuse\"]',\n      'form[action*=\"reject\"] button','.tHlp8d','#W0wltc'\n    ];\n    for (var i = 0; i < selectors.length; i++) {\n      var btn = document.querySelector(selectors[i]);\n      if (btn) { btn.click(); return true; }\n    }\n    var buttons = document.querySelectorAll('button');\n    var rejectWords = ['reject','hylkää','decline','refuse','kieltä'];\n    for (var j = 0; j < buttons.length; j++) {\n      var txt = (buttons[j].innerText || '').toLowerCase();\n      if (rejectWords.some(function(w){ return txt.indexOf(w) >= 0; })) {\n        buttons[j].click(); return true;\n      }\n    }\n    return false;\n  }\n  setTimeout(function() {\n    if (!_clickGoogleReject()) setTimeout(_clickGoogleReject, 1000);\n  }, 500);\n}"
+  },
+  "appConfig": {
+    "homeUrl": "https://www.aloitus.net",
+    "appBarColor": "#757575",
+    "iconColor": "#BDBDBD",
+    "showGridToggle": true,
+    "showHistoryButton": true,
+    "showDiagnostics": false
+  }
 }
