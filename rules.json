@@ -21739,7 +21739,9 @@
     "googlevideo.com",
     "ytimg.com",
     "op.fi",
-    "op-palvelut.fi"
+    "op-palvelut.fi",
+    "iltasanomat.fi",
+    "is.fi"
   ],
   "extraCssSelectors": [
     "#cookie-notice",
