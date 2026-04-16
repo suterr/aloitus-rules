@@ -21759,6 +21759,6 @@
     "iconColor": "#BDBDBD",
     "showGridToggle": true,
     "showHistoryButton": true,
-    "showDiagnostics": false
+    "showDiagnostics": true
   }
 }
