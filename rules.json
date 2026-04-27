@@ -1,6 +1,6 @@
 {
   "version": "auto",
-  "updated": "2026-04-20",
+  "updated": "2026-04-27",
   "cssSelectors": [
     "#-e_xobwhg_utggxk",
     "#ACClayerBackground",
@@ -20532,6 +20532,7 @@
     "player-telemetry.vimeo.com",
     "pointmediatracker.com",
     "polaranalytics.com",
+    "privacy-analytics-proxy.cookiebot.com",
     "procroanalytics.com",
     "prod.tahoe-analytics.publishers.advertising.a2z.com",
     "prod.tracking.refinitiv.com",
