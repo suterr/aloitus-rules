@@ -1,6 +1,6 @@
 {
   "version": "auto",
-  "updated": "2026-04-27",
+  "updated": "2026-05-04",
   "cssSelectors": [
     "#-e_xobwhg_utggxk",
     "#ACClayerBackground",
@@ -19651,6 +19651,7 @@
     "analytics-consent-manager-v2-prod.azureedge.net",
     "analytics-dataplane.invideo.io",
     "analytics-fe.digital-cloud-prem.medallia.com",
+    "analytics-fe.digital-cloud.medallia.ca",
     "analytics-fe.digital-cloud.medallia.com",
     "analytics-gw.games.wanmei.com",
     "analytics-helper.com",
@@ -20868,6 +20869,7 @@
     "tracker-00.qvb.qcloud.com",
     "tracker-aa.paf.es",
     "tracker-aa.pafbetscore.lv",
+    "tracker-beam.tempo.co",
     "tracker-dot-dfty-optimeeze-leroymerlinfr.appspot.com",
     "tracker-dot-optimeeze.appspot.com",
     "tracker-rec.smart-bdash.com",
