@@ -1,6 +1,6 @@
 {
   "version": "auto",
-  "updated": "2026-06-29",
+  "updated": "2026-07-06",
   "cssSelectors": [
     "#-e_xobwhg_utggxk",
     "#ACClayerBackground",
@@ -19638,6 +19638,7 @@
     "amp.analytics-debugger.com",
     "analoganalytics.com",
     "analytics-1.cavai.com",
+    "analytics-api-s.cloudinary.com",
     "analytics-api.gemcommerce.com",
     "analytics-api.klickly.com",
     "analytics-api.samsunghealthcn.com",
@@ -19651,6 +19652,7 @@
     "analytics-consent-manager-v2-prod.azureedge.net",
     "analytics-dataplane.invideo.io",
     "analytics-fe.digital-cloud-prem.medallia.com",
+    "analytics-fe.digital-cloud-prem.medallia.eu",
     "analytics-fe.digital-cloud.medallia.ca",
     "analytics-fe.digital-cloud.medallia.com",
     "analytics-gw.games.wanmei.com",
