@@ -1,6 +1,6 @@
 {
   "version": "auto",
-  "updated": "2026-09-28",
+  "updated": "2026-10-05",
   "cssSelectors": [
     "#-e_xobwhg_utggxk",
     "#ACClayerBackground",
@@ -19705,6 +19705,7 @@
     "analytics.animexx.de",
     "analytics.api.justeattakeaway.com",
     "analytics.apnewsregistry.com",
+    "analytics.app.funnelish.com",
     "analytics.archive.org",
     "analytics.argeton.com",
     "analytics.arunraghavan.net",
@@ -20556,6 +20557,7 @@
     "qubitanalytics.appspot.com",
     "react-admin-telemetry.marmelab.com",
     "readertracking.com",
+    "realtimeanalytics.yext.com",
     "realtracker.com",
     "retargettracker.com",
     "rightmoveanalytics.co.uk",
