@@ -1,6 +1,6 @@
 {
   "version": "auto",
-  "updated": "2026-11-16",
+  "updated": "2026-11-23",
   "cssSelectors": [
     "#-e_xobwhg_utggxk",
     "#ACClayerBackground",
@@ -19663,6 +19663,7 @@
     "analytics-nssl.bradyid.com",
     "analytics-prd.aws.wehaa.net",
     "analytics-prod-alb-292764149.us-west-2.elb.amazonaws.com",
+    "analytics-prod.pubgen.org",
     "analytics-prod2.glance-internal.inmobi.com",
     "analytics-production.hapyak.com",
     "analytics-proxy.springboard.com",
@@ -19708,7 +19709,6 @@
     "analytics.api.justeattakeaway.com",
     "analytics.apnewsregistry.com",
     "analytics.app.funnelish.com",
-    "analytics.archive.org",
     "analytics.argeton.com",
     "analytics.arunraghavan.net",
     "analytics.asml.com",
@@ -20099,6 +20099,7 @@
     "analytics.scorpion.co",
     "analytics.seagate.com",
     "analytics.shareaholic.com",
+    "analytics.shelbyklein.com",
     "analytics.shop.hisense.com",
     "analytics.shopncaasports.com",
     "analytics.shorte.st",
